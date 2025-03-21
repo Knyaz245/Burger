@@ -1,0 +1,374 @@
+@font-face {
+    font-family: Roboto regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roleway bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: Roleway regular;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: Rolewayblack;
+    src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: Roleway thin;
+    src: url(../fonts/Raleway-Thin.ttf);
+}
+:root{
+    --roleway-bold:Roleway bold;
+    --roleway-regular:Roleway regular;
+    --roleway-thin:Roleway thin;
+    --roleway-black:Rolewayblack;
+    --roboto-bold:Roboto bold;
+    --roboto-regular:Roboto regular;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    height: 124px;
+}
+.head-container{
+    flex-shrink: 0;
+    width: 100%;
+    height: 62px;
+    background-color: #0C0C0C;
+    padding-top:20px ;
+}
+.header-list,
+.header-list__2{
+    display: flex;
+    column-gap: 28px;
+}
+.header-container__2{
+    width: 100%;
+    height: 62px;
+    background-color: #060606;
+}
+.header-headline__box,
+.head-headline__box{
+    width: 1109px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.header-logo__link span{
+    font-family: var(--roboto-regular);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+.header-link{
+    font-family: var(--roboto-regular);
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    transition: .3s;
+}
+.header-title{
+    width: 216px;
+    height: 53px;
+    background-color: #06600F;
+    border-radius: 4px;
+    color: #fff;
+    font-family: var(--roboto-bold);
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    padding-top:7px;
+    margin-top: 4px;
+}
+.header-list__2{
+    transform: translateY(22px);
+}
+.header-linl__2{
+    font-family: var(--roleway-regular);
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    transition: .3s;
+}
+.header-link:hover{
+    color: #69CF17;
+}
+.header-linl__2:hover{
+    color: #69CF17;
+}
+.hero{
+    width: 100%;
+    min-height: 700px;
+    background-image: url(../img/food-burger-wallpaper-preview\ 1.jpg);
+    padding-top:167px ;
+    position: relative;
+}
+.hero-container{
+    width: 1000px;
+    margin: auto;
+}
+.hero-title{
+    font-family: var(--roleway-black);
+    font-weight: 900;
+    font-size: 72px;
+    color: #69CF17;
+    margin-bottom: 18px;
+}
+.hero-span{
+    font-family: var(--roleway-regular);
+    font-size: 36px;
+    font-weight: 400;
+    color: #69CF17;
+    margin-bottom: 10px;
+    display: block;
+}
+.hero-text{
+    font-family: var(--roleway-regular);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.hero-span__2{
+    display: block;
+    max-width: 285px;
+    width: 100%;
+    height: 103px;
+    background-color: rgba(105, 207, 23, 0.5);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    font-family: var(--roleway-thin);
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 33px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+.hero-span__2:hover{
+    transform: scale(1.1);
+}
+.hero-btn {
+    display: flex;
+    width: 255px;
+    height: 51px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    font-family: var(--roleway-regular);
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 15px;
+    background-size: 100% 100%; /* Полный размер градиента */
+    background-position: left; /* Начальное положение */
+    transition: background-size 0.3s ease-in-out; /* Анимация */
+    align-self: center;
+    padding-left: 68px;
+} 
+.hero-btn:hover {
+    background-size: 200% 100%; /* Увеличиваем размер, чтобы убрать второй цвет */
+}
+.hero-btn__container{
+    display: flex;
+    justify-content: space-between;
+}
+.burger{
+    width: 100%;
+    min-height: 1171px;
+    background-color: #393636;
+    padding-top: 78px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.burger-item{
+    width: 370px;
+    height: 524px;
+    border-radius: 4px;
+    background-color: #0C0C0C;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform .3s ease;
+}
+.burger-img__link {
+    display: block;
+    width: 331px;
+    height: 325px;
+    position: relative;
+    overflow: hidden;
+}
+
+.burger-img__link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 207, 23, 0.7); /* Зеленый полупрозрачный */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger-img__link:hover::before {
+    transform: translateY(0);
+}
+
+/* Стили для иконки корзины */
+.burger-img__link {
+    display: block;
+    width: 331px;
+    height: 325px;
+    position: relative;
+    overflow: hidden;
+}
+
+.burger-img__link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 207, 23, 0.7); /* Зеленый полупрозрачный фон */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger-img__link:hover::before {
+    transform: translateY(0);
+}
+
+/* Стили для иконки корзины */
+.burger-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.1s; /* Появление с задержкой */
+}
+.burger-img__link:hover .burger-cart {
+    opacity: 1;
+}
+
+
+.burger-title{
+    font-family: var(--roleway-bold);
+    font-weight: 600;
+    font-size:19px;
+    line-height: 15px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.burger-text{
+    font-family: var(--roleway-regular);
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+}
+.burger-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+.burger-item:hover{
+    transform: scale(1.1);
+}
+.google-map{
+    width: 100%;
+    height: 500px;
+}
+.map{
+    width: 100%;
+    height: 580px;
+    background-color: #fff;
+}
+.map-title{
+    font-family: var(--roleway-bold);
+    font-weight: 600;
+    font-size: 50px;
+    color: #69CF17;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer-container{
+    width: 100%;
+    height: 268px;
+    padding: 30px;
+    background: linear-gradient(180deg, #000 2%,#417D11 50%);
+}
+.footer{
+    width: 100%;
+    height: 325px;
+}
+.footer-headline__container{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
+.footer-number{
+    font-family: var(--roboto-bold);
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-list{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 90px;
+    column-gap: 20px;
+}
+.footer-link{
+    font-family: var(--roboto-regular);
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    transition: .3s;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--roboto-regular);
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.footer-bottom{
+    width: 100%;
+    height: 57px;
+    background-color: #1A3406;
+    padding-top: 19px;
+}
+.footer-link:hover{
+    color: #69CF17;
+}
