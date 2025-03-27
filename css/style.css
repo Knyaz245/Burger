@@ -50,11 +50,12 @@ a{
     width: 100%;
     height: 62px;
     background-color: #0C0C0C;
-    padding-top:20px ;
+    padding-top:20px;
 }
 .header-list,
 .header-list__2{
     display: flex;
+    align-items: center;
     column-gap: 28px;
 }
 .header-container__2{
@@ -76,13 +77,6 @@ a{
     font-weight: 400;
     text-align: center;
 }
-.header-link{
-    font-family: var(--roboto-regular);
-    font-weight: 400;
-    color: #fff;
-    font-size: 16px;
-    transition: .3s;
-}
 .header-title{
     width: 216px;
     height: 53px;
@@ -96,22 +90,21 @@ a{
     padding-top:7px;
     margin-top: 4px;
 }
-.header-list__2{
-    transform: translateY(22px);
-}
-.header-linl__2{
-    font-family: var(--roleway-regular);
-    font-size: 16px;
+
+.header-link, .header-linl__2 {
+    font-family: var(--roboto-regular);
     font-weight: 400;
     color: #fff;
-    transition: .3s;
+    font-size: 16px;
+    transition: .5s;
+    padding: 20px 15px; /* Увеличиваем отступы для высоты */
+    height: 100%; /* Занимает всю высоту родительского контейнера */
 }
-.header-link:hover{
-    color: #69CF17;
+.header-link:hover, .header-linl__2:hover {
+    color: #000; /* Меняем цвет текста на чёрный */
+    background-color: #69CF17; /* Меняем фон на зелёный */
 }
-.header-linl__2:hover{
-    color: #69CF17;
-}
+
 .hero{
     width: 100%;
     min-height: 700px;
